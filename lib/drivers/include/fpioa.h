@@ -909,7 +909,7 @@ int fpioa_set_function_raw(int number, fpioa_function_t function);
  *     - 0      Success
  *     - Other  Fail
  */
-int fpioa_set_function(int number, fpioa_function_t function);
+extern int fpioa_set_function(int number, fpioa_function_t function);
 
 /**
  * @brief       Set tie enable to function

@@ -20,7 +20,7 @@ project(${PROJ} C CXX ASM)
 # config self use headers
 include(./cmake/macros.internal.cmake)
 header_directories(${SDK_ROOT}/lib)
-
+header_directories(${SDK_ROOT}/components)
 
 #header_directories(src/${PROJ})
 #header_directories(kendryte-standalone-demo/${PROJ})
@@ -34,7 +34,6 @@ include_directories(src/micro/tensorflow/tensorflow/lite/micro/tools/make/downlo
 # build library first
 add_subdirectory(lib)
 
-# add_subdirectory(components)
 
 add_compile_definitions(TF_LITE_USE_GLOBAL_ROUND)
 
